@@ -1,5 +1,5 @@
 {
-  "name": "not-headless-browser",
+  "name": "notheleb",
   "version": "0.0.1",
   "description": "Not headless browser",
   "main": "index.js",
@@ -23,5 +23,13 @@
     "cheerio": "^1.0.0-rc.2",
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [],
+    "targets": [
+      "node8-linux-x64",
+      "node8-macos-x64"
+    ]
   }
 }
