@@ -1,18 +1,18 @@
 #meta info
-NAME=notheleb
+NAME:=notheleb
 OUT=$(NAME)-*
+
+all: $(NAME)
+
+clean:
+	rm -rf $(OUT)
 
 # install dependencies
 dep:
 	npm install
 
-# production mode: make [production | pro | p]
-production pro p: dep build-production
-
-# build
-build-%:
+build:
 	pkg .
 
-clean:
-	rm -rf $(OUT)
+$(NAME): dep build
 
